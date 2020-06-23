@@ -1,13 +1,21 @@
-import React from 'react';
-import Grid from "./Components/Grid"
+import React from "react";
+import Grid from "./Components/Grid";
+import styled from "styled-components";
 
+const Layout = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
 function App() {
   return (
-    <div>
-        <h1>Game of Life</h1>
+    <Layout>
+      <h1>Game of Life</h1>
+      <Layout>
         <Grid></Grid>
-    </div>
+      </Layout>
+    </Layout>
   );
 }
 
