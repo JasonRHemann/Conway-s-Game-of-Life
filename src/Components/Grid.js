@@ -1,8 +1,6 @@
-import React, { useState, useCallback, useRef, useEffect } from "react";
+import React, { useState, useCallback, useRef } from "react";
 import produce from "immer";
 import styled from "styled-components";
-import ReactTooltip from "react-tooltip";
-import { Tooltip } from "reactstrap";
 
 const MainContainer = styled.div`
   background-color: #33ff86;
