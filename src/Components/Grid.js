@@ -58,8 +58,6 @@ function Grid() {
   const numRows = 35;
   const numCols = 80;
   const colors = ["#427BFF", "#7044FF", "#FFDB2C", "#FFB92C"];
-  const [tooltipOpen, setTooltipOpen] = useState(false);
-  const toggle = () => setTooltipOpen(!tooltipOpen);
 
   //creating grid and setting to all zeros
   function initialState() {
@@ -115,7 +113,7 @@ function Grid() {
       });
     });
     setTimeout(runSim, timeRef.current);
-  }, [timeRef.current]);
+  }, []);
   console.log(timeRef.current);
   return (
     <MainContainer>
